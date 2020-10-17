@@ -21,10 +21,11 @@ public class Utilities {
     }
     int empRatePerHr=20;
     int wages;
-    public double EmpDailyWages(){/*
-     * functionality:this method contain the logic of employee daily wages
-     * @return     wages        - the output values
-     */
+    public double EmpDailyWages(){
+        /*
+        * functionality:this method contain the logic of employee daily wages
+        * @return     wages        - the output values
+        */
         int empHrs=8;
         if(empCheck==IsFullTime)
             return wages=empRatePerHr*empHrs;
@@ -34,6 +35,11 @@ public class Utilities {
     int IsPartTime=2;
     double randomCheck =Math.floor(Math.random()*10)%3;
     public double PartTimeWages(){
+        /*
+         * functionality:this method contain the logic of fill time and
+         *               part time employee daily wages
+         * @return     wages        - the output values
+         */
         if (randomCheck==IsFullTime)
             return wages=empRatePerHr*8;
         else if (randomCheck==IsPartTime)
