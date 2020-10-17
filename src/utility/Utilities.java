@@ -34,9 +34,10 @@ public class Utilities {
     int IsPartTime=2;
     double randomCheck =Math.floor(Math.random()*10)%3;
     public double PartTimeWages(){
-        int empHrs=4;
-        if (randomCheck==IsPartTime)
-            return wages=empRatePerHr*empHrs;
+        if (randomCheck==IsFullTime)
+            return wages=empRatePerHr*8;
+        else if (randomCheck==IsPartTime)
+            return wages=empRatePerHr*4;
         else
             return 0;
     }

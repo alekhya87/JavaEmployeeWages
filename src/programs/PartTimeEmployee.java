@@ -14,10 +14,11 @@ public class PartTimeEmployee {
         Scanner scanner=new Scanner(System.in);
         Utilities utilities=new Utilities();
         double wages=utilities.PartTimeWages();
-        if (wages>0)
-            System.out.println("Part time Employee is present : "+wages);
-        else
-            System.out.println("Part time Employee is Absent : "+wages);
+        if (wages==80)
+            System.out.println("Part time Employee wages are : "+wages);
+        else if(wages>80)
+            System.out.println("full time Employee wages are :"+wages);
+            System.out.println("Employee is Absent : "+wages);
         scanner.close();
     }
 }
