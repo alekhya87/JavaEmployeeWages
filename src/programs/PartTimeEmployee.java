@@ -18,6 +18,7 @@ public class PartTimeEmployee {
             System.out.println("Part time Employee wages are : "+wages);
         else if(wages>80)
             System.out.println("full time Employee wages are :"+wages);
+        else
             System.out.println("Employee is Absent : "+wages);
         scanner.close();
     }
