@@ -7,16 +7,29 @@ package utility;
  */
 public class Utilities {
     /*
-    * functionality:this method contain the logic of adding two numbers
+    * functionality:this method contain the logic of employee Attendence
     * @return     empCheck        - the output values
     */
 
     int IsFullTime=1;
+    double empCheck =Math.floor(Math.random()*10)%2;
     public double Attendence(){
-        double empCheck =Math.floor(Math.random()*10)%2;
         if (empCheck==IsFullTime)
             return empCheck;
         else
             return 0;
     }
+    public double EmpDailyWages(){/*
+     * functionality:this method contain the logic of employee daily wages
+     * @return     wages        - the output values
+     */
+        int empRatePerHr=20;
+        int empHrs=8;
+        int wages;
+        if(empCheck==IsFullTime)
+            return wages=empRatePerHr*empHrs;
+        else
+            return 0;
+    }
+
 }
