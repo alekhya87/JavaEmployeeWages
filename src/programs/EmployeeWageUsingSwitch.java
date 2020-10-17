@@ -11,7 +11,6 @@ import java.util.Scanner;
  */
 public class EmployeeWageUsingSwitch {
     public static void main(String[] argv){
-        System.out.println("Welcome To Employee Wage Computation");
         Scanner scanner=new Scanner(System.in);
         Utilities utilities=new Utilities();
         double wages=utilities.empWageSwitch();
