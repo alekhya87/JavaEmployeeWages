@@ -19,14 +19,23 @@ public class Utilities {
         else
             return 0;
     }
+    int empRatePerHr=20;
+    int wages;
     public double EmpDailyWages(){/*
      * functionality:this method contain the logic of employee daily wages
      * @return     wages        - the output values
      */
-        int empRatePerHr=20;
         int empHrs=8;
-        int wages;
         if(empCheck==IsFullTime)
+            return wages=empRatePerHr*empHrs;
+        else
+            return 0;
+    }
+    int IsPartTime=2;
+    double randomCheck =Math.floor(Math.random()*10)%3;
+    public double PartTimeWages(){
+        int empHrs=4;
+        if (randomCheck==IsPartTime)
             return wages=empRatePerHr*empHrs;
         else
             return 0;
