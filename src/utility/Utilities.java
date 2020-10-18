@@ -65,7 +65,33 @@ public class Utilities {
             default:
                 return 0;
         }
-
     }
-
+    public int empWageMonth() {
+        /*
+         * functionality:this method contain the logic of fill time and
+         *               part time employee daily wages using switch
+         * @return     totalwages   - the output value employee total wages for a month
+         */
+        int NumWorkingDays=20;
+        int totalWages=0;
+        int empHrs=0;
+        for (int day = 1; day<=NumWorkingDays; day++)
+        {
+            /*double randomCheck=(int)Math.floor(Math.random()*10)%3;*/
+            switch ((int) randomCheck)
+            {
+                case 1:
+                    empHrs = 8;
+                    break;
+                case 2:
+                    empHrs = 4;
+                    break;
+                default:
+                    empHrs = 0;
+            }
+            wages=empHrs*empRatePerHr;
+            totalWages=totalWages+wages;
+        }
+        return totalWages;
+    }
 }
