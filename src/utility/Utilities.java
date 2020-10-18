@@ -74,10 +74,9 @@ public class Utilities {
          */
         int NumWorkingDays=20;
         int totalWages=0;
-        int empHrs=0;
+        int empHrs;
         for (int day = 1; day<=NumWorkingDays; day++)
         {
-            /*double randomCheck=(int)Math.floor(Math.random()*10)%3;*/
             switch ((int) randomCheck)
             {
                 case 1:
@@ -93,5 +92,33 @@ public class Utilities {
             totalWages=totalWages+wages;
         }
         return totalWages;
+    }
+    int totalWage=0;
+    int NumOfWorkingDays=20;
+    public  int empWageMaxDaysHours()
+    {
+        /*
+    @Functionality - calculates employee wage until given condition reached.
+    @returns       - total wage
+    */
+        int empHrs;
+        int totalEmpHrs=0;
+        int totalworkingDays=0;
+        int MaxHrsInMonth=100;
+        while (totalEmpHrs<=MaxHrsInMonth && totalworkingDays<NumOfWorkingDays){
+            totalworkingDays++;
+            switch ((int) randomCheck){
+                case 1:
+                    empHrs =8;
+                    break;
+                case 2:
+                    empHrs = 4;
+                    break;
+                default:
+                    empHrs=0;
+            }
+            totalEmpHrs=totalEmpHrs+empHrs;
+        }
+        return totalWage=totalWage+(totalEmpHrs*empRatePerHr);
     }
 }
