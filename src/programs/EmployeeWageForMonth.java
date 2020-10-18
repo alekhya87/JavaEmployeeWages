@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /*
  * @author:alekhya
- * @created date:17th oct 2020
+ * @created date:18th oct 2020
  * @functionality:employee wages for a month
  */
 public class EmployeeWageForMonth {
