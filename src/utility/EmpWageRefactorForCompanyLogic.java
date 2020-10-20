@@ -9,7 +9,11 @@ public class EmpWageRefactorForCompanyLogic {
     /*
      * functionality:this method contain the logic of employee wage refactor
      *               for a company
-     * @return     totalWage        - the output values to the main method
+     *@param company                 : first input argument
+     *@param empRatePerHr            : second input argument
+     *@param NumWorkingDays          : third input argument
+     *@param MaxWorkingHrsInMonth    : fourth input argument
+     *@return  totalWage             : the output values to the main method
      */
     int empHrs;
     public int EmployeeWageHrs(String company, int empRatePerHr, int NumWorkingDays, int MaxWorkingHrsInMonth) {
