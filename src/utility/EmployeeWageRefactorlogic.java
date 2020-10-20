@@ -8,7 +8,11 @@ package utility;
 public class EmployeeWageRefactorlogic {
     /*
      * functionality:this method contain the logic of employee wage refactor
-     * @return     totalWage        - the output values to the main method
+     *@param company                 : first input argument
+     *@param empRatePerHr            : second input argument
+     *@param NumWorkingDays          : third input argument
+     *@param MaxWorkingHrsInMonth    : fourth input argument
+     * @return     totalWage         : the output values to the main method
      */
     int empHrs;
     public int WageHrs(String company, int empRatePerHr, int NumWorkingDays, int MaxWorkingHrsInMonth) {
