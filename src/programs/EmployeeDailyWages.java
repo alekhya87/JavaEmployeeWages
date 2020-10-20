@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @author:alekhya
  * @created date:17th oct 2020
  * @functionality:attendence of employee if they are
- *                  present or absent
+ *                present or absent
  */
 public class EmployeeDailyWages {
     public static void main(String[] argv){
