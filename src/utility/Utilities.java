@@ -8,7 +8,7 @@ package utility;
 public class Utilities {
     /*
     * functionality:this method contain the logic of employee Attendence
-    * @return     empCheck        - the output values
+    * @return     empCheck       - the output values
     */
 
     int IsFullTime=1;
